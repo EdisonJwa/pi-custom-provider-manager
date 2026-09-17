@@ -1,0 +1,52 @@
+{
+  "name": "pi-custom-provider-manager",
+  "version": "0.2.0",
+  "description": "Pi extension for managing custom LLM providers: configuration, model discovery, and registration with Pi's provider runtime.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-extension",
+    "pi-coding-agent",
+    "custom-provider",
+    "openai-compatible",
+    "openai-responses",
+    "anthropic-compatible",
+    "gemini",
+    "llm",
+    "ollama",
+    "vllm",
+    "lm-studio",
+    "litellm",
+    "openrouter",
+    "model-discovery",
+    "thinking"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "files": [
+    "index.ts",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "scripts": {
+    "check": "tsgo --noEmit -p tsconfig.json || tsc --noEmit -p tsconfig.json",
+    "test": "node --test --experimental-strip-types test/"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0"
+  }
+}

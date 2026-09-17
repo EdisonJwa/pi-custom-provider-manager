@@ -1,0 +1,9 @@
+node_modules/
+*.log
+scaffold/
+
+# Local editor/agent state — not part of the extension.
+.claude/
+
+# Pi local session/task state — not part of the extension.
+.pi/
